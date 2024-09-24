@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment-5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto">
+    <header class="sticky top-0 backdrop-blur">
+      <!-- navber start -->
+      <div class="navbar py-5 px-5 bg-gray-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button">
+              <button class="btn btn-success">blog</button>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl items-center"
+            ><img src="images/logo.png" alt="" /> donate bangladesh</a
+          >
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost">
+            <div class="flex gap-2 items-center">
+              <img src="images/coin.png" alt="" />
+              <p id="account-balance" class="text-lg">5500</p>
+              <span>BDT</span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <!-- navber end -->
+
+      <div class="flex justify-center gap-5 my-16">
+        <button id="show-donation" class="btn btn-success mb-7">Donation</button>
+        <button id="show-history" class="btn btn-success mb-7">History</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="show-donation-btn">
+        <!-- card section one start -->
+      <section id="donationSection" >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 rounded-xl p-8 my-16 shadow-2xl"
+        >
+          <img src="./images/noakhali.png" alt="" />
+
+          <div>
+            <!-- for value -->
+            <div class="flex gap-2">
+              <img src="./images/coin.png" alt="" />
+              <span id="noakhali-balance">0</span>
+              <span>BDT</span>
+            </div>
+            <h3 class="font-bold my-5">
+              Donate for Flood at Noakhali, Bangladesh
+            </h3>
+            <p>
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <input
+              id="noakhali-input"
+              class="border border-gray-200 p-3 rounded-lg w-full my-5"
+              type="number"
+              placeholder="Write Donation Amount"
+            />
+
+            <div class="form-control mt-6">
+              <button id="noakhali-submit" class="btn btn-success">
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card section one end -->
+
+        <!-- card section two start -->
+        <section id="donationSection" >
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 rounded-xl p-8 my-16 shadow-2xl"
+            >
+              <img src="./images/feni.png" alt="" />
+    
+              <div>
+                <!-- for value -->
+                <div class="flex gap-2">
+                  <img src="./images/coin.png" alt="" />
+                  <span id="feni-balance">0</span>
+                  <span>BDT</span>
+                </div>
+                <h3 class="font-bold my-5">
+                    Donate for Flood Relief in Feni,Bangladesh
+                </h3>
+                <p>
+                  The recent floods in feni have caused significant damage to
+                  homes infrastructure. Your donation will help provide essential
+                  supplies and to those affected by this disaster. Every
+                  contribution, big or small, makes difference. Please join us in
+                  supporting the relief efforts and making a positive impact on the
+                  lives of those in need.
+                </p>
+                <input
+                  id="feni-input"
+                  class="border border-gray-200 p-3 rounded-lg w-full my-5"
+                  type="number"
+                  placeholder="Write Donation Amount"
+                />
+    
+                <div class="form-control mt-6">
+                  <button id="feni-submit" class="btn btn-success">
+                    Donate Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- card section two end -->
+       
+
+             <!-- card section three start -->
+      <section id="donationSection">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 rounded-xl p-8 my-16 shadow-2xl"
+        >
+          <img src="./images/quota-protest.png" alt="" />
+
+          <div>
+            <!-- for value -->
+            <div class="flex gap-2">
+              <img src="./images/coin.png" alt="" />
+              <span id="Quota-balance">0</span>
+              <span>BDT</span>
+            </div>
+            <h3 class="font-bold my-5">
+              Donate for Flood at Noakhali, Bangladesh
+            </h3>
+            <p>
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <input
+              id="Quota-input"
+              class="border border-gray-200 p-3 rounded-lg w-full my-5"
+              type="number"
+              placeholder="Write Donation Amount"
+            />
+
+            <div class="form-control mt-6">
+              <button id="Quota-submit" class="btn btn-success">
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card section three end -->
+
+      </section>
+      <section id="historySection" class="space-y-4">
+      </section>
+    </main>
+
+    <script src="./js/node.js"></script>
+    <script src="./js/show.js"></script>
+  </body>
+</html>
